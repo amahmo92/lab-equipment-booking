@@ -1,7 +1,5 @@
 site_name: Lab Equipment Booking
-theme: mkdocs
-site_dir: site
-docs_dir: docs
+theme: mkdocs-material
 nav:
   - Home: index.md
   - Equipment:
