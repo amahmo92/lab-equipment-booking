@@ -10,7 +10,7 @@ The Husky A300 is a rugged mobile robot platform ideal for lab environments, ind
 - [Download Specifications (Word)](../assets/Husky A300/specs.docx)
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID " frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lRN7OLICzkk " frameborder="0" allowfullscreen></iframe>
 
 ## Book This Equipment
 

@@ -10,7 +10,7 @@ The Four-legged Robot Spot is a versatile robotic platform designed for research
 - [Download Specifications (Word)](../assets/Four-legged Robot Spot/specs.docx)
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID " frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zxGwOEYYFVo " frameborder="0" allowfullscreen></iframe>
 
 ## Book This Equipment
 

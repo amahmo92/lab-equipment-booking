@@ -10,7 +10,7 @@ The Cobalt Traffic Controller is an advanced system used for real-time traffic m
 - [Download Specifications (Word)](../assets/Cobalt Traffic Controller/specs.docx)
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID " frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LuGaUw-nT04 " frameborder="0" allowfullscreen></iframe>
 
 ## Book This Equipment
 

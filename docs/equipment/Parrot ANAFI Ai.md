@@ -10,7 +10,7 @@ The Parrot ANAFI Ai is a lightweight drone with built-in artificial intelligence
 - [Download Specifications (Word)](../assets/Parrot ANAFI Ai/specs.docx)
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID " frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/b14NT6Dtob0 " frameborder="0" allowfullscreen></iframe>
 
 ## Book This Equipment
 

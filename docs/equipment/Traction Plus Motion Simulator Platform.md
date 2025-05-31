@@ -10,7 +10,7 @@ The Traction Plus Motion Simulator Platform is used for vehicle dynamics simulat
 - [Download Specifications (Word)](../assets/Traction Plus Motion Simulator Platform/specs.docx)
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID " frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-2SeA4wWGns&t=4s " frameborder="0" allowfullscreen></iframe>
 
 ## Book This Equipment
 

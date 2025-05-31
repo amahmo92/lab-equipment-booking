@@ -10,7 +10,7 @@ The Flir TrafiSense AI is a smart sensing solution for intelligent transportatio
 - [Download Specifications (Word)](../assets/Flir TrafiSense AI/specs.docx)
 
 ## Video Demo
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID " frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UCZk-6JQ3DI " frameborder="0" allowfullscreen></iframe>
 
 ## Book This Equipment
 
