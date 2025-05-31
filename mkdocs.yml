@@ -1,7 +1,0 @@
-site_name: Lab Equipment Booking
-theme:
-  name: material
-nav:
-  - Home: overview.md
-  - Equipment: index.md
-      
