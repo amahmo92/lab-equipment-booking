@@ -1,7 +1,9 @@
 site_name: Lab Equipment Booking
 theme:
   name: material
+use_directory_urls: false
 nav:
   - Home: overview.md
   - Equipment: index.md
-      
+  - Lab Space: lab-space.md
+
