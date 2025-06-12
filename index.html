@@ -328,157 +328,132 @@
   border-radius: 6px;
 }
 </style>
+<!-- Dropdown Filter -->
+<div class="tag-filter-dropdown">
+  <label for="tagFilter">Filter by Tag:</label>
+  <select id="tagFilter" onchange="filterEquipment()">
+    <option value="all">All</option>
+    <option value="robot">Robot</option>
+    <option value="sensor">Sensor</option>
+    <option value="pc">PC</option>
+    <option value="drone">Drone</option>
+    <option value="ai">AI</option>
+    <option value="vr">VR</option>
+    <option value="embedded">Embedded</option>
+    <option value="camera">Camera</option>
+  </select>
+</div>
 
 <div class="equipment-grid">
 
-  <div class="equipment-item">
+  <div class="equipment-item ai">
     <h3><a href="equipment/Cobalt Traffic Controller.html">Cobalt Traffic Controller</a></h3>
     <a href="equipment/Cobalt Traffic Controller.html">
       <img src="assets/Cobalt Traffic Controller/image.jpg" alt="Cobalt Traffic Controller" />
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/EVO Radar.html">EVO Radar</a></h3>
-    <a href="equipment/EVO Radar.html">
-      <img src="assets/EVO Radar/image.jpg" alt="EVO Radar" />
-    </a>
-  </div>
-
-  <div class="equipment-item">
-    <h3><a href="equipment/Flir TrafiSense AI.html">Flir TrafiSense AI</a></h3>
-    <a href="equipment/Flir TrafiSense AI.html">
-      <img src="assets/Flir TrafiSense AI/image.jpg" alt="Flir TrafiSense AI" />
-    </a>
-  </div>
-
-  <div class="equipment-item">
+  <div class="equipment-item robot ai">
     <h3><a href="equipment/Four-legged Robot Spot.html">Four-legged Robot Spot</a></h3>
     <a href="equipment/Four-legged Robot Spot.html">
       <img src="assets/Four-legged Robot Spot/image.jpg" alt="Four-legged Robot Spot" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item robot embedded">
     <h3><a href="equipment/Husky A300.html">Husky A300</a></h3>
     <a href="equipment/Husky A300.html">
       <img src="assets/Husky A300/image.jpg" alt="Husky A300" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item sensor camera">
     <h3><a href="equipment/Mikado Soundcam.html">Mikado Soundcam</a></h3>
     <a href="equipment/Mikado Soundcam.html">
       <img src="assets/Mikado Soundcam/image.jpg" alt="Mikado Soundcam" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item pc ai embedded">
     <h3><a href="equipment/Neousys NRU-220S Series.html">Neousys NRU-220S Series</a></h3>
     <a href="equipment/Neousys NRU-220S Series.html">
       <img src="assets/Neousys NRU-220S Series/image.jpg" alt="Neousys NRU-220S Series" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item drone camera ai">
     <h3><a href="equipment/Parrot ANAFI Ai.html">Parrot ANAFI Ai</a></h3>
     <a href="equipment/Parrot ANAFI Ai.html">
       <img src="assets/Parrot ANAFI Ai/image.jpg" alt="Parrot ANAFI Ai" />
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/Traction Plus Motion Simulator Platform.html">Traction Plus Motion Simulator Platform</a></h3>
-    <a href="equipment/Traction Plus Motion Simulator Platform.html">
-      <img src="assets/Traction Plus Motion Simulator Platform/image.jpg" alt="Traction Plus Motion Simulator Platform" />
-    </a>
-  </div>
 
-  <div class="equipment-item">
+
+  <div class="equipment-item vr">
     <h3><a href="equipment/virtual reality slimx-13.html">Virtual Reality SlimX-13</a></h3>
     <a href="equipment/virtual reality slimx-13.html">
       <img src="assets/virtual reality slimx-13/image.jpg" alt="Virtual Reality SlimX-13" />
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/Elara Radar.html">Elara Radar</a></h3>
-    <a href="equipment/Elara Radar.html">
+  <div class="equipment-item sensor camera">
+    <h3><a href="equipment/Elara Radar + Flir TrafiSense AI + Traction Simulator.html">Elara Radar + Flir TrafiSense AI + Traction Simulator</a></h3>
+    <a href="equipment/Elara Radar + Flir TrafiSense AI + Traction Simulator.html">
       <img src="assets/Elara Radar/image.jpg" alt="Elara Radar" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item embedded">
     <h3><a href="equipment/Arduino MKR NB 1500.html">Arduino MKR NB 1500</a></h3>
     <a href="equipment/Arduino MKR NB 1500.html">
       <img src="assets/Arduino MKR NB 1500/image.jpg" alt="Arduino MKR NB 1500" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item pc ai embedded">
     <h3><a href="equipment/Jetson Orin Nano Super Developer Kit.html">Jetson Orin Nano Super Developer Kit</a></h3>
     <a href="equipment/Jetson Orin Nano Super Developer Kit.html">
       <img src="assets/Jetson Orin Nano Super Developer Kit/image.jpg" alt="Jetson Orin Nano Super Developer Kit" />
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/LPMS PVC Cable.html">LPMS PVC cable</a></h3>
-    <a href="equipment/LPMS PVC Cable.html">
-      <img src="assets/LPMS PVC Cable/image.jpg" alt="LPMS PVC Cable" />
-    </a>
-  </div>
-
-  <div class="equipment-item">
+  <div class="equipment-item sensor ">
     <h3><a href="equipment/noggin 250.html">noggin 250</a></h3>
     <a href="equipment/noggin 250.html">
       <img src="assets/noggin 250/image.jpg" alt="noggin 250" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item sensor camera">
     <h3><a href="equipment/Baumer VCXG.2-15C.I Sensor.html">Baumer VCXG.2-15C.I sensor</a></h3>
     <a href="equipment/Baumer VCXG.2-15C.I Sensor.html">
       <img src="assets/Baumer VCXG.2-15C.I Sensor/image.jpg" alt="Baumer VCXG.2-15C.I Sensor" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item pc embedded">
     <h3><a href="equipment/HORUI SSD.html">HORUI SSD</a></h3>
     <a href="equipment/HORUI SSD.html">
       <img src="assets/HORUI SSD/image.jpg" alt="HORUI SSD" />
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/BI1brainterface Eurorack.html">BI1brainterface eurorack</a></h3>
-    <a href="equipment/BI1brainterface Eurorack.html">
+  <div class="equipment-item sensor embedded">
+    <h3><a href="equipment/BI1brainterface + Biosignal Modules.html">BI1brainterface eurorack</a></h3>
+    <a href="equipment/BI1brainterface + Biosignal Modules.html">
       <img src="assets/BI1brainterface Eurorack/image.jpg" alt="BI1brainterface Eurorack" />
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/ADDAC303 Muscle Sensing.html">ADDAC303 Muscle Sensing</a></h3>
-    <a href="equipment/ADDAC303 Muscle Sensing.html">
-      <img src="assets/ADDAC303 Muscle Sensing/image.jpg" alt="ADDAC303 Muscle Sensing" />
-    </a>
-  </div>
-
-  <div class="equipment-item">
-    <h3><a href="equipment/ADDAC307 Heart Sensing.html">ADDAC307 Heart Sensing</a></h3>
-    <a href="equipment/ADDAC307 Heart Sensing.html">
-      <img src="assets/ADDAC307 Heart Sensing/image.jpg" alt="ADDAC307 Heart Sensing" />
-    </a>
-  </div>
-
-  <div class="equipment-item">
+  <div class="equipment-item sensor">
     <h3><a href="equipment/Electromagnetic Sensors.html">electromagnetic sensors Cable</a></h3>
     <a href="equipment/Electromagnetic Sensors.html">
       <img src="assets/Electromagnetic Sensors/image.jpg" alt="Electromagnetic Sensors" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item embedded">
     <h3><a href="equipment/4MS Pod64X.html">4MS Pod64X</a></h3>
     <a href="equipment/4MS Pod64X.html">
       <img src="assets/4MS Pod64X/image.jpg" alt="4MS Pod64X" />
@@ -492,28 +467,28 @@
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/Raspberry Pi 4 Model B.html">Raspberry Pi 4 Model B</a></h3>
-    <a href="equipment/Raspberry Pi 4 Model B.html">
+  <div class="equipment-item pc embedded">
+    <h3><a href="equipment/Raspberry Pi 5 Model B.html">Raspberry Pi 4 Model B</a></h3>
+    <a href="equipment/Raspberry Pi 5 Model B.html">
       <img src="assets/Raspberry Pi 4 Model B/image.jpg" alt="Raspberry Pi 4 Model B" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item sensor">
     <h3><a href="equipment/Geofón DIY Kit.html">Geofón DIY kit</a></h3>
     <a href="equipment/Geofón DIY Kit.html">
       <img src="assets/Geofón DIY Kit/image.jpg" alt="Geofón DIY kit" />
     </a>
   </div>
 
-  <div class="equipment-item">
-    <h3><a href="equipment/Kinova Gen3.html">Kinova Gen3</a></h3>
-    <a href="equipment/Kinova Gen3.html">
+  <div class="equipment-item robot">
+    <h3><a href="equipment/Kinova Gen3 + Xbox Controller Setup.html">Kinova Gen3</a></h3>
+    <a href="equipment/Kinova Gen3 + Xbox Controller Setup.html">
       <img src="assets/Kinova Gen3/image.jpg" alt="Kinova Gen3" />
     </a>
   </div>
 
-  <div class="equipment-item">
+  <div class="equipment-item sensor">
     <h3><a href="equipment/Zoom Microphone.html">Zoom microphone</a></h3>
     <a href="equipment/Zoom Microphone.html">
       <img src="assets/Zoom Microphone/image.jpg" alt="Zoom Microphone" />
@@ -521,6 +496,21 @@
   </div>
 
 </div>
+
+<script>
+function filterEquipment() {
+  const selectedTag = document.getElementById('tagFilter').value;
+  const items = document.querySelectorAll('.equipment-item');
+
+  items.forEach(item => {
+    if (selectedTag === 'all') {
+      item.style.display = 'block';
+    } else {
+      item.style.display = item.classList.contains(selectedTag) ? 'block' : 'none';
+    }
+  });
+}
+</script>
 
 
 

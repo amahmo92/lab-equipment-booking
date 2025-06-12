@@ -16,7 +16,7 @@
     
     
       
-        <title>Geofón DIY Kit - Lab Equipment Booking</title>
+        <title>Kinova Gen3 + Controller Setup - Lab Equipment Booking</title>
       
     
     
@@ -58,7 +58,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#geofon-diy-kit" class="md-skip">
+        <a href="#kinova-gen3-controller-setup" class="md-skip">
           Skip to content
         </a>
       
@@ -94,7 +94,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Geofón DIY Kit
+              Kinova Gen3 + Controller Setup
             
           </span>
         </div>
@@ -285,9 +285,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#book-this-equipment" class="md-nav__link">
+  <a href="#book-this-equipment-group" class="md-nav__link">
     <span class="md-ellipsis">
-      Book This Equipment
+      Book This Equipment Group
     </span>
   </a>
   
@@ -309,39 +309,25 @@
 
 
 
-<h1 id="geofon-diy-kit">Geofón DIY Kit</h1>
-<p><img alt="Geofón DIY Kit" src="../assets/Geof%C3%B3n%20DIY%20Kit/image.jpg" /></p>
+<h1 id="kinova-gen3-controller-setup">Kinova Gen3 + Controller Setup</h1>
+<p><img alt="Kinova Gen3" src="../assets/Kinova%20Gen3/image.jpg" />  </p>
 <h2 id="description">Description</h2>
-<p>DIY geophone kit used for seismic and vibration sensing experiments.</p>
-<!-- Show PDF -->
-<div class="asset-viewer" id="manual" style="display:none;">
-  <h3>Manual</h3>
-  <iframe src="https://docs.google.com/gview?url=https://amahmo92.github.io/lab-equipment-booking/assets/Geofon%20DIY%20Kit/manual.pdf&embedded=true"
+<p>This page is for booking the following setup together:
+- <strong>Kinova Gen3 Robotic Arm</strong> – Ideal for precision automation tasks.
+- <strong>New Xbox Console</strong> – For integration testing, game-based control, or user interaction studies.</p>
+<p>Perfect for robotics + gaming experiments or teleoperation setups.</p>
+<!-- Show PDFs -->
+<div class="asset-viewer" id="manual-kinova" style="display:none;">
+  <h3>Kinova Gen3 Manual</h3>
+  <iframe src="https://docs.google.com/gview?url=https://amahmo92.github.io/lab-equipment-booking/assets/Kinova%20Gen3/manual.pdf&embedded=true"
           style="width:100%; height:600px;" frameborder="0"></iframe>
 </div>
 
-<h2 id="book-this-equipment">Book This Equipment</h2>
-<form action="mailto:m.zaki@uwo.ca" method="post" enctype="text/plain">
-  <label>Your Name:</label><br>
-  <input type="text" name="name"><br><br>
-
-  <label>Email:</label><br />
-  <input type="email" name="email"><br /><br />
-
-  <label>Start Date:</label><br />
-  <input type="date" name="start_date"><br /><br />
-
-  <label>End Date:</label><br />
-  <input type="date" name="end_date"><br /><br />
-
-  <label>Start Time:</label><br />
-  <input type="time" name="start_time"><br /><br />
-
-  <label>End Time:</label><br />
-  <input type="time" name="end_time"><br /><br />
-
-  <input type="submit" value="Submit Booking">
-</form>
+<div class="asset-viewer" id="manual-xbox" style="display:none;">
+  <h3>Xbox Console Manual</h3>
+  <iframe src="https://docs.google.com/gview?url=https://amahmo92.github.io/lab-equipment-booking/assets/Xbox%20Console/manual.pdf&embedded=true"
+          style="width:100%; height:600px;" frameborder="0"></iframe>
+</div>
 
 <script>
 function checkFileExists(url, elementId) {
@@ -352,10 +338,34 @@ function checkFileExists(url, elementId) {
       }
     })
     .catch(() => {});
+}
 
-checkFileExists("https://amahmo92.github.io/lab-equipment-booking/assets/Geofon%20DIY%20Kit/manual.pdf",  "manual");
-document.getElementById("video").style.display = "YOUTUBE_VIDEO_ID" ? "block" : "none";
+checkFileExists("https://amahmo92.github.io/lab-equipment-booking/assets/Kinova%20Gen3/manual.pdf", "manual-kinova");
+checkFileExists("https://amahmo92.github.io/lab-equipment-booking/assets/Xbox%20Console/manual.pdf", "manual-xbox");
 </script>
+
+<h2 id="book-this-equipment-group">Book This Equipment Group</h2>
+<form action="mailto:m.zaki@uwo.ca" method="post" enctype="text/plain">
+  <label>Your Name:</label><br>
+  <input type="text" name="name"><br><br>
+
+  <label>Email:</label><br />
+  <input type="email" name="email"><br /><br />
+
+  <label>Start Date:</label><br />
+  <input type="date" name="start_date"><br><br>
+
+  <label>End Date:</label><br />
+  <input type="date" name="end_date"><br><br>
+
+  <label>Start Time:</label><br />
+  <input type="time" name="start_time"><br><br>
+
+  <label>End Time:</label><br />
+  <input type="time" name="end_time"><br><br>
+
+  <input type="submit" value="Submit Booking">
+</form>
 
 
 

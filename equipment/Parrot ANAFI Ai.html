@@ -285,24 +285,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#video-demo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Video Demo
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#book-this-equipment" class="md-nav__link">
     <span class="md-ellipsis">
       Book This Equipment
@@ -330,14 +312,19 @@
 <h1 id="parrot-anafi-ai">Parrot ANAFI Ai</h1>
 <p><img alt="Parrot ANAFI Ai" src="../assets/Parrot%20ANAFI%20Ai/image.jpg" /></p>
 <h2 id="description">Description</h2>
-<p>The Parrot ANAFI Ai is a lightweight drone with built-in artificial intelligence for autonomous flight and aerial data capture.</p>
-<h2 id="files">Files</h2>
-<ul>
-<li><a href="../assets/Parrot%20ANAFI%20Ai/manual.pdf">Download Manual (PDF)</a></li>
-<li><a href="../assets/Parrot%20ANAFI%20Ai/specs.docx">Download Specifications (Word)</a></li>
-</ul>
-<h2 id="video-demo">Video Demo</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/b14NT6Dtob0 " frameborder="0" allowfullscreen></iframe>
+<p>The ANAFI Ai is a high-performance, 4G-connected drone designed for professional use in industries such as construction, inspection, photogrammetry, and real estate. Featuring a compact and foldable design, it is ready to fly within 60 seconds and offers up to 32 minutes of flight time. The drone's standout feature is its seamless 4G connectivity, enabling unlimited-range flights, BVLOS (Beyond Visual Line of Sight) operations, and live streaming at 1080p 30 fps with no interference near telecom towers. It is equipped with a powerful 48 MP camera capable of shooting 4K HDR10 video at 60 fps, offering exceptional detail with a dynamic range of 14 EV and 6x zoom. For precision tasks, the ANAFI Ai supports autonomous photogrammetry missions with embedded PIX4D flight planning, achieving survey-grade accuracy (0.46 cm/px GSD at 30 m). Designed with cybersecurity in mind, it ensures zero data sharing by default, features FIPS140-2 and CC EAL5+ certified Secure Elements, and provides digitally signed images for transparency. Its open ecosystem includes a Software Development Kit, compatibility with third-party applications like PIX4Dscan and PIX4Dinspect, and support for onboard coding. With advanced navigation systems, obstacle avoidance, and indoor flight capabilities, this drone combines versatility, performance, and robust security to meet the demands of complex business applications.</p>
+<!-- Show PDF -->
+<div class="asset-viewer" id="manual" style="display:none;">
+  <h3>Manual</h3>
+  <iframe src="https://docs.google.com/gview?url=https://amahmo92.github.io/lab-equipment-booking/assets/Parrot%20ANAFI%20Ai/manual.pdf&embedded=true"
+          style="width:100%; height:600px;" frameborder="0"></iframe>
+</div>
+
+<!-- Show Video -->
+<div class="asset-viewer" id="video" style="display:none;">
+  <h3>Video Demo</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <h2 id="book-this-equipment">Book This Equipment</h2>
 <form action="mailto:m.zaki@uwo.ca" method="post" enctype="text/plain">
@@ -347,8 +334,11 @@
   <label>Email:</label><br />
   <input type="email" name="email"><br /><br />
 
-  <label>Date:</label><br>
-  <input type="date" name="date"><br><br>
+  <label>Start Date:</label><br />
+  <input type="date" name="start_date"><br><br>
+
+  <label>End Date:</label><br />
+  <input type="date" name="end_date"><br><br>
 
   <label>Start Time:</label><br />
   <input type="time" name="start_time"><br /><br />
@@ -358,6 +348,21 @@
 
   <input type="submit" value="Submit Booking">
 </form>
+
+<script>
+function checkFileExists(url, elementId) {
+  fetch(url, { method: 'HEAD' })
+    .then(response => {
+      if (response.status === 200) {
+        document.getElementById(elementId).style.display = "block";
+      }
+    })
+    .catch(() => {});
+}
+
+checkFileExists("https://amahmo92.github.io/lab-equipment-booking/assets/Parrot%20ANAFI%20Ai/manual.pdf",  "manual");
+document.getElementById("video").style.display = "YOUTUBE_VIDEO_ID" ? "block" : "none";
+</script>
 
 
 

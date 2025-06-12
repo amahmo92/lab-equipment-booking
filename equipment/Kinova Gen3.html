@@ -285,24 +285,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files" class="md-nav__link">
-    <span class="md-ellipsis">
-      Files
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#video-demo" class="md-nav__link">
-    <span class="md-ellipsis">
-      Video Demo
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#book-this-equipment" class="md-nav__link">
     <span class="md-ellipsis">
       Book This Equipment
@@ -330,14 +312,19 @@
 <h1 id="kinova-gen3">Kinova Gen3</h1>
 <p><img alt="Kinova Gen3" src="../assets/Kinova%20Gen3/image.jpg" /></p>
 <h2 id="description">Description</h2>
-<p>A robotic arm used for precision tasks in automation and AI testing.</p>
-<h2 id="files">Files</h2>
-<ul>
-<li><a href="../assets/Kinova%20Gen3/manual.pdf">Download Manual (PDF)</a></li>
-<li><a href="../assets/Kinova Gen3/specs.docx">Download Specifications (Word)</a></li>
-</ul>
-<h2 id="video-demo">Video Demo</h2>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID"  frameborder="0" allowfullscreen></iframe>
+<p>Robotic arm used for precision tasks in automation and AI testing.</p>
+<!-- Show PDF -->
+<div class="asset-viewer" id="manual" style="display:none;">
+  <h3>Manual</h3>
+  <iframe src="https://docs.google.com/gview?url=https://amahmo92.github.io/lab-equipment-booking/assets/Kinova%20Gen3/manual.pdf&embedded=true"
+          style="width:100%; height:600px;" frameborder="0"></iframe>
+</div>
+
+<!-- Show Video -->
+<div class="asset-viewer" id="video" style="display:none;">
+  <h3>Video Demo</h3>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUTUBE_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+</div>
 
 <h2 id="book-this-equipment">Book This Equipment</h2>
 <form action="mailto:m.zaki@uwo.ca" method="post" enctype="text/plain">
@@ -347,8 +334,11 @@
   <label>Email:</label><br />
   <input type="email" name="email"><br /><br />
 
-  <label>Date:</label><br>
-  <input type="date" name="date"><br><br>
+  <label>Start Date:</label><br />
+  <input type="date" name="start_date"><br /><br />
+
+  <label>End Date:</label><br />
+  <input type="date" name="end_date"><br /><br />
 
   <label>Start Time:</label><br />
   <input type="time" name="start_time"><br /><br />
@@ -358,6 +348,20 @@
 
   <input type="submit" value="Submit Booking">
 </form>
+
+<script>
+function checkFileExists(url, elementId) {
+  fetch(url, { method: 'HEAD' })
+    .then(response => {
+      if (response.status === 200) {
+        document.getElementById(elementId).style.display = "block";
+      }
+    })
+    .catch(() => {});
+
+checkFileExists("https://amahmo92.github.io/lab-equipment-booking/assets/Kinova%20Gen3/manual.pdf",  "manual");
+document.getElementById("video").style.display = "YOUTUBE_VIDEO_ID" ? "block" : "none";
+</script>
 
 
 
